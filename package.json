@@ -35,5 +35,8 @@
     "url": "https://github.com/ErathiaChia/client-chatgpt/issues"
   },
   "homepage": "https://github.com/ErathiaChia/client-chatgpt#readme",
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "18.x"
+  }
 }
