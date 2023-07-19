@@ -1,1 +1,0 @@
-web: vite --port 8080
