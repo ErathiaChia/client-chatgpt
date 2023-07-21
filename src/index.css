@@ -28,3 +28,6 @@
   background: #7aebfb;
   filter: blur(190px)
 }
+.bg-white {
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}

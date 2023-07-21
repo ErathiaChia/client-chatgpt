@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 
-const ChatInput = ({ sendMessage, loading }) => {
+const ChatInput = ({ sendMessage, loading ,defaultSearch,setActive}) => {
   const [value, setValue] = useState("");
 
   const handleSubmit = () => {
     if (value === "") return;
     sendMessage({ sender: "user", message: value });
+    setActive(false);
     setValue("");
   };
-  return (
+  useEffect(()=>{
+    setValue(defaultSearch)
+
+  },[defaultSearch])
+  return (    
     <div
       className="w-full bg-white bg-opacity-10 max-h-40 rounded-lg px-4
     py-4 overflow-auto relative"
