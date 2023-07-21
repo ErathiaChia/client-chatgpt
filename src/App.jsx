@@ -73,10 +73,12 @@ function App() {
             </div>
             <div class="flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
               <ul class="flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
-              <button
+                <button
                   class="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-900"
                   onClick={() => {
-                    onClick("Got any creative ideas for a 10 year old’s birthday?");
+                    onClick(
+                      "Got any creative ideas for a 10 year old’s birthday?"
+                    );
                   }}
                 >
                   "Got any creative ideas for a 10 year old’s birthday?" →
@@ -85,7 +87,7 @@ function App() {
             </div>
             <div class="flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
               <ul class="flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
-              <button
+                <button
                   class="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-900"
                   onClick={() => {
                     onClick("How do I make an HTTP request in Javascript?");
