@@ -50,9 +50,12 @@ function App() {
       {active ? (
         <div className="w-full max-w-4xl min-w-[20rem] self-center">
           <div className="row mb-3">
-            <div className="w-full max-w-4xl min-w-[20rem] self-center text-center">
+            <div className="w-full max-w-4xl min-w-[40rem] self-center text-center">
               <p>
-                Hello, I'm Eugene doppelgänger. An highly intelligent chatbot that can answer questions about Eugene's past experiences, career goals, and more. If you wish to schedule an interview with me in person, please reach me @ +65 9145 9415
+                Hello, I'm Eugene doppelgänger. <br />
+                An highly intelligent chatbot that can answer questions about Eugene's past experiences, career goals, and more.<br />
+                If you wish to schedule an interview with me in person,<br />
+                please reach me @ +65 9145 9415<br />
               </p>
             </div>
           </div>
@@ -88,10 +91,10 @@ function App() {
                 <button
                   class="bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   onClick={() => {
-                    onClick("What are your career goals?");
+                    onClick("What are your next career goals?");
                   }}
                 >
-                  What are your career goals? →
+                  What are your next career goals? →
                 </button>
               </ul>
             </div>
