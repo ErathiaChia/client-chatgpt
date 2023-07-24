@@ -68,7 +68,9 @@ function App() {
                     onClick("Tell me more about yourself");
                   }}
                 >
-                  "Tell me more about yourself" →
+                  Tell me more about yourself
+                  <br />
+                  →
                 </button>
               </ul>
             </div>
@@ -82,7 +84,9 @@ function App() {
                     );
                   }}
                 >
-                  What are your biggest accomplishments? →
+                  What are your biggest accomplishments?
+                  <br />
+                  →
                 </button>
               </ul>
             </div>
@@ -91,10 +95,12 @@ function App() {
                 <button
                   class="bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   onClick={() => {
-                    onClick("What are your next career goals?");
+                    onClick("What are your career goals?");
                   }}
                 >
-                  What are your next career goals? →
+                  What are your career goals?
+                  <br />
+                  →
                 </button>
               </ul>
             </div>
