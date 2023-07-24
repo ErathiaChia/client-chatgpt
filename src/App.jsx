@@ -52,9 +52,7 @@ function App() {
           <div className="row mb-3">
             <div className="w-full max-w-4xl min-w-[20rem] self-center text-center">
               <p>
-                Lorem ipsum is placeholder text commonly used in the graphic,
-                print, and publishing industries for previewing layouts and
-                visual mockups.
+                Hello, I'm Eugene doppelgänger. An highly intelligent chatbot that can answer questions about Eugene's past experiences, career goals, and more. If you wish to schedule an interview with me in person, please reach me @ +65 9145 9415
               </p>
             </div>
           </div>
