@@ -48,9 +48,9 @@ function App() {
       </div>
       {/* dumy search */}
       {active ? (
-        <div className="w-full max-w-4xl min-w-[20rem] self-center">
+        <div className="w-full max-w-4xl min-w-[20rem] self-center align-middle">
           <div className="row mb-3">
-            <div className="w-full max-w-4xl min-w-[40rem] self-center text-center">
+            <div className="w-full max-w-4xl min-w-[20rem] self-center text-center">
               <p>
                 Hello, I'm Eugene doppelgänger. <br />
                 An highly intelligent chatbot that can answer questions about Eugene's past experiences, career goals, and more.<br />
@@ -59,11 +59,11 @@ function App() {
               </p>
             </div>
           </div>
-          <div class="md:flex items-start text-center gap-3.5">
-            <div class="flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
-              <ul class="flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
+          <div class="h-32 md:flex items-start text-center gap-3.5">
+            <div class="h-full flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
+              <ul class="h-full flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
                 <button
-                  class="bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                  class="h-full bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   onClick={() => {
                     onClick("Tell me more about yourself");
                   }}
@@ -74,10 +74,10 @@ function App() {
                 </button>
               </ul>
             </div>
-            <div class="flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
-              <ul class="flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
+            <div class="h-32 flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
+              <ul class="h-full flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
                 <button
-                  class="bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                  class="h-full bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   onClick={() => {
                     onClick(
                       "What are your biggest accomplishments?"
@@ -90,10 +90,10 @@ function App() {
                 </button>
               </ul>
             </div>
-            <div class="flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
-              <ul class="flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
+            <div class="h-32 flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
+              <ul class="h-full flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
                 <button
-                  class="bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                  class="h-full bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   onClick={() => {
                     onClick("What are your career goals?");
                   }}
