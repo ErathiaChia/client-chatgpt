@@ -53,13 +53,13 @@ function App() {
             <div className="w-full max-w-4xl min-w-[20rem] self-center text-center">
               <p>
                 Hello, I'm Eugene doppelgänger. <br />
-                An highly intelligent chatbot that can answer questions about Eugene's past experiences, career goals, and more.<br />
+                An highly intelligent chatbot that can answer questions about Eugene's past experiences, career goals, and more.<br /><br />
                 If you wish to schedule an interview with me in person,<br />
-                please reach me @ +65 9145 9415<br />
+                please reach me @ +65 9145 9415<br /><br />
               </p>
             </div>
           </div>
-          <div class="h-32 md:flex items-start text-center gap-3.5">
+          <div class="h-24 md:flex items-start text-center gap-3.5">
             <div class="h-full flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
               <ul class="h-full flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
                 <button
@@ -74,7 +74,7 @@ function App() {
                 </button>
               </ul>
             </div>
-            <div class="h-32 flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
+            <div class="h-24 flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
               <ul class="h-full flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
                 <button
                   class="h-full bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
@@ -90,7 +90,7 @@ function App() {
                 </button>
               </ul>
             </div>
-            <div class="h-32 flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
+            <div class="h-24 flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
               <ul class="h-full flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
                 <button
                   class="h-full bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
