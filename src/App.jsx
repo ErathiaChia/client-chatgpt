@@ -62,38 +62,38 @@ function App() {
             <div class="flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
               <ul class="flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
                 <button
-                  class="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-900"
+                  class="bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   onClick={() => {
-                    onClick("Explain quantum computing in simple terms");
+                    onClick("Tell me more about yourself");
                   }}
                 >
-                  "Explain quantum computing in simple terms" →
+                  "Tell me more about yourself" →
                 </button>
               </ul>
             </div>
             <div class="flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
               <ul class="flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
                 <button
-                  class="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-900"
+                  class="bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   onClick={() => {
                     onClick(
-                      "Got any creative ideas for a 10 year old’s birthday?"
+                      "What are your biggest accomplishments?"
                     );
                   }}
                 >
-                  "Got any creative ideas for a 10 year old’s birthday?" →
+                  What are your biggest accomplishments? →
                 </button>
               </ul>
             </div>
             <div class="flex flex-col mb-8 md:mb-auto gap-3.5 flex-1">
               <ul class="flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
                 <button
-                  class="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-900"
+                  class="bg-transparent hover:bg-white text-white-700 font-semibold hover:text-blue-500 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   onClick={() => {
-                    onClick("How do I make an HTTP request in Javascript?");
+                    onClick("What are your career goals?");
                   }}
                 >
-                  "How do I make an HTTP request in Javascript?" →
+                  What are your career goals? →
                 </button>
               </ul>
             </div>
