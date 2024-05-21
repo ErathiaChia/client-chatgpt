@@ -3,6 +3,7 @@ import ChatBody from "./components/ChatBody";
 import ChatInput from "./components/ChatInput";
 import { useMutation } from "react-query";
 import { fetchResponse } from "./api";
+
 function App() {
   const [chat, setChat] = useState([]);
   const [active, setActive] = useState(true);
@@ -12,41 +13,46 @@ function App() {
     mutationFn: () => {
       return fetchResponse(chat);
     },
-    onSuccess: (data) =>
-      setChat((prev) => [
-        ...prev,
-        { sender: "ai", message: data.message.replace(/^\n\n/, "") },
-      ]),
+    onSuccess: (data) => {
+      console.log("API response:", data);
+      if (data && data.message) {
+        setChat((prev) => [
+          ...prev,
+          { sender: "ai", message: data.message.replace(/^\n\n/, "") },
+        ]);
+      } else {
+        console.error("API response is missing 'message' property", data);
+      }
+    },
+    onError: (error) => {
+      console.error("Mutation error", error);
+    }
   });
 
   const sendMessage = async (message) => {
     await Promise.resolve(setChat((prev) => [...prev, message]));
     mutation.mutate();
   };
+
   const handleActive = async (message) => {
     console.log("message", message);
     await setActive(message);
     await Promise.resolve(setActive((prev) => message));
-
-    console.log("message", active);
   };
-  /** dumy search **/
+
   const onClick = (value) => {
     setValue(value);
   };
-  /**/
 
   return (
     <div className="bg-[#1A232E] h-screen py-6 relative sm:px-16 px-12 text-white overflow-hidden flex flex-col justify-between  align-middle">
-      {/* gradients */}
       <div className="gradient-01 z-0 absolute"></div>
       <div className="gradient-02 z-0 absolute"></div>
 
-      {/* header */}
       <div className="uppercase font-bold  text-2xl text-center mb-3">
         Eugene AI doppelgänger
       </div>
-      {/* dumy search */}
+
       {active ? (
         <div className="w-full max-w-4xl min-w-[20rem] self-center align-middle">
           <div className="row mb-3">
@@ -108,8 +114,6 @@ function App() {
         </div>
       ) : null}
 
-      {/*  */}
-      {/* body */}
       <div
         className="h-[90%] overflow-auto w-full max-w-4xl min-w-[20rem] py-8 px-4 self-center
       scrollbar-thumb-slate-400 scrollbar-thin scrollbar-track-gray-tranparent scrollbar-thumb-rounded-md
@@ -118,7 +122,6 @@ function App() {
         <ChatBody chat={chat} />
       </div>
 
-      {/* input */}
       <div className="w-full max-w-4xl min-w-[20rem] self-center">
         <ChatInput
           sendMessage={sendMessage}
