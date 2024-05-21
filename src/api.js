@@ -1,7 +1,7 @@
 export const fetchResponse = async (chat) => {
     try {
         // after depoloyment you should change the fetch URL below
-        const response = await fetch('https://backendchat-cc548140ad88.herokuapp.com/', {
+        const response = await fetch('http://localhost:5001/',{ //('https://backendchat-cc548140ad88.herokuapp.com/', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
